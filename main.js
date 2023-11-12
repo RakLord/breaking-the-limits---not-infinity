@@ -322,7 +322,7 @@ function init() {
   });
 
   Displays.DisplayProductionPoint.hover(function () {
-    hover = !hover;
+    game.hover = !game.hover;
   });
 
   //Saving
