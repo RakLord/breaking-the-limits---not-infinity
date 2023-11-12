@@ -1,248 +1,223 @@
 body {
-    background-color: #101530;
-    font-family: sans-serif;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-
+  background-color: #101530;
+  font-family: sans-serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
-body.monospace{
-    font-family: 'Courier New', Courier, monospace;
+body.monospace {
+  font-family: "Courier New", Courier, monospace;
 }
-
-
 
 div {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-        width:95%;
-
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 95%;
 }
-.changelog{
-    border: 3px solid #aaaaaa;
-    border-radius: 15px;
-    padding: 25px;
-    width: 100%;
-    text-align: center;
+.changelog {
+  border: 3px solid #aaaaaa;
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
 }
 .horizontal {
-    flex-direction: row;
+  flex-direction: row;
 }
-div.progress {    
-    width: 1%;
-    margin: 0px;
-    padding: 5px;
-    
-}    
-div.limit{
-        background-color: #108040;
+div.progress {
+  width: 1%;
+  margin: 0px;
+  padding: 5px;
 }
-div.extend{
-        background-color: #808010;
+div.limit {
+  background-color: #108040;
 }
-
-div.progressBar{    
-    width: 250px;
-    border: 1px solid white;
-    margin: 0px;
-    margin-inline: 20px;
-    padding: 0px;
-    align-items: left;
-    justify-content: left;
-
-}
-div.container{
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid #ffffff;
-    border-radius: 15px;
-    text-align: center;
-        overflow-x: auto;
-
-}
-.top{
-    background-color: #101530;
-    position: sticky;
-    top: 0px;
-    width: 90%;
-    border-bottom: 3px solid #102040;
-    border-radius: 15px;
-}
-.body{
-    /*padding-top: 250px;*/
-    padding-bottom: 80px;
-    height: 70%;
-}
-.sideleft{
-    position: fixed;
-    left: 0px;
-    width: 20%;
-    float: left;
-    opacity: 0.4;
-    background-color: #1e1e1e;
-    border-right: 5px solid #004aaa;
-    border-radius: 20px;
-
-    padding: 5px;
-}
-.sideright{
-    position: fixed;
-    right: 0px;
-    width: 30%;
-    float: right;
-    opacity: 0.7;
-    background-color: #1e1e1e;
-    border-left: 5px solid #004aaa;
-    border-radius: 20px;
-
-    padding: 20px;
-}
-.bottom{
-    background-color: #101530;
-    position: fixed;
-    bottom: -15px;
-    padding: 20px;
-    width: 90%;
-    border-top: 2px solid grey;
-    border-radius: 10px;
+div.extend {
+  background-color: #808010;
 }
 
+div.progressBar {
+  width: 250px;
+  border: 1px solid white;
+  margin: 0px;
+  margin-inline: 20px;
+  padding: 0px;
+  align-items: left;
+  justify-content: left;
+}
+div.container {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  overflow-x: auto;
+}
+.top {
+  background-color: #101530;
+  position: sticky;
+  top: 0px;
+  width: 90%;
+  border-bottom: 3px solid #102040;
+  border-radius: 15px;
+}
+.body {
+  /*padding-top: 250px;*/
+  padding-bottom: 80px;
+  height: 70%;
+}
+.sideleft {
+  position: fixed;
+  left: 0px;
+  width: 20%;
+  float: left;
+  opacity: 0.4;
+  background-color: #1e1e1e;
+  border-right: 5px solid #004aaa;
+  border-radius: 20px;
 
+  padding: 5px;
+}
+.sideright {
+  position: fixed;
+  right: 0px;
+  width: 30%;
+  float: right;
+  opacity: 0.7;
+  background-color: #1e1e1e;
+  border-left: 5px solid #004aaa;
+  border-radius: 20px;
 
-strong{
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
+  padding: 20px;
 }
-p.container{
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    text-align: center;
-
-}
-.nomargin{
-    margin: 0px;
-}
-.hfix{
-    height: 250px;
-    overflow-y: scroll;
-    display: inline-block;
-    resize: vertical;
-}
-.contained{
-    width: 90%
-}
-.left{
-    justify-content: left;
-}
-.center{
-    justify-content: center;
+.bottom {
+  background-color: #101530;
+  position: fixed;
+  bottom: -15px;
+  padding: 20px;
+  width: 90%;
+  border-top: 2px solid grey;
+  border-radius: 10px;
 }
 
+strong {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+p.container {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+.nomargin {
+  margin: 0px;
+}
+.hfix {
+  height: 250px;
+  overflow-y: scroll;
+  display: inline-block;
+  resize: vertical;
+}
+.contained {
+  width: 90%;
+}
+.left {
+  justify-content: left;
+}
+.center {
+  justify-content: center;
+}
 
 button > p {
-    margin-block: 12px;
+  margin-block: 12px;
 }
 button.small > p {
-    margin-block: 9px;
+  margin-block: 9px;
 }
-
-
 
 button {
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #00000040;
-    color: white;
-    border: 2px solid grey;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #00000040;
+  color: white;
+  border: 2px solid grey;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 
-    font-family: inherit;
+  font-family: inherit;
 }
-#tabControlLimit button{
-    width: 200px;
-    border-radius: 0.2rem;
-    border: 2px dotted #40ff40;
+#tabControlLimit button {
+  width: 200px;
+  border-radius: 0.2rem;
+  border: 2px dotted #40ff40;
 }
-button.small{
-    width: 185px;
-    margin: 5px;
-    padding: 3px;
-    border-radius: 7px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column; 
+button.small {
+  width: 185px;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
-button.mini{
-    width: 50px;
-    height: 50px;
+button.mini {
+  width: 50px;
+  height: 50px;
 }
-button.bought{
-    background-color: #004aaa;
+button.bought {
+  background-color: #004aaa;
 }
-button.inTab{
-    background-color: #102540;
-    border-color: #cccccc;
+button.inTab {
+  background-color: #102540;
+  border-color: #cccccc;
 }
-button.limit.inTab{
-    border-color: #10c060;
-}
-
-button.extend.inTab{
-        border-color: #c0c010;
-}
-#tabControlLimit button.inTab{
-    background-color: #102015;
-}
-button.version{
-    width: 60px;
+button.limit.inTab {
+  border-color: #10c060;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.sizemin{
-    display: none;
+button.extend.inTab {
+  border-color: #c0c010;
+}
+#tabControlLimit button.inTab {
+  background-color: #102015;
+}
+button.version {
+  width: 60px;
 }
 
+.sizemin {
+  display: none;
+}
 
 @media only screen and (max-width: 1200px) {
-    .container.horizontal, #tabStructures .horizontal {
-        flex-direction: column;
-    }
+  .container.horizontal,
+  #tabStructures .horizontal {
+    flex-direction: column;
   }
+}
 @media only screen and (max-width: 550px) and (orientation: portrait) {
-    .sizemin{
-        display: flex;
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        margin-bottom: 15%;
-        background-color: #102020;
-        opacity: 0.8;
-    }
-    
+  .sizemin {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 15%;
+    background-color: #102020;
+    opacity: 0.8;
   }
+}
