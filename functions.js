@@ -1,4 +1,4 @@
-export function updateData(Displays, game, Constructs, Buttons) {
+export function updateData(Constructs) {
   //(Displays, game)
   let QL1Val = Constructs.upgradesDisplay("QL1 CE", 0);
   if (game.upgradesQL1[0] > 0 && game.frameCount % Math.floor(QL1Val[1]) == 0) {
@@ -11,7 +11,7 @@ export function updateData(Displays, game, Constructs, Buttons) {
     Mousetrap.bind("w", holdClick);
   }
 
-  updateGeneration(game, Constructs, Buttons, Displays);
+  updateGeneration(Constructs);
 
   condenseDisplayFormat(Displays.DisplayScorePoint, game.pointScore, 5);
   condenseDisplayFormat(Displays.DisplayScoreLimit, game.limits.Score, 5);
@@ -110,7 +110,7 @@ export function updateData(Displays, game, Constructs, Buttons) {
   }
 }
 
-export function updateConditions(game, Buttons, Displays) {
+export function updateConditions() {
   let points = game.pointScore;
   let limits = game.limitScoreTotal;
   let gen = game.totalStructures;
@@ -243,7 +243,7 @@ export function updateConditions(game, Buttons, Displays) {
   }
 }
 
-export function updateGeneration(game, Constructs, Buttons, Displays) {
+export function updateGeneration(Constructs) {
   let generation = (1 + Constructs.structuresGen(game.structures)) / 100;
   game.pointScore = game.pointScore + generation;
   //game.scoreTotal = game.scoreTotal + generation;
@@ -252,5 +252,5 @@ export function updateGeneration(game, Constructs, Buttons, Displays) {
     game.pointScore = game.limits.Score;
   }
 
-  updateConditions(game, Buttons, Displays);
+  updateConditions();
 }

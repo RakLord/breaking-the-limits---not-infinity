@@ -4,10 +4,6 @@ import * as Constructs from "./constructures.js";
 import "./mousetrap.js";
 import { updateData } from "./functions.js";
 
-let Displays = {};
-let Buttons = {};
-
-
 
 $(document).ready(function () {
   console.log("Debug message");
@@ -20,6 +16,8 @@ $(document).ready(function () {
 function init() {
   window.game = new Game();
   window.texts = new Texts();
+  window.Displays = {};
+  window.Buttons = {};
 
   //Displays
   Displays.Body = $("#body");
@@ -365,7 +363,7 @@ function tick() {
   game.frameCount++;
   game.frameSaveCount++;
 
-  updateData(Displays, game, Constructs, Buttons);
+  updateData(Constructs);
 
   if (game.frameSaveCount >= 1000) {
     game.saveGame();
