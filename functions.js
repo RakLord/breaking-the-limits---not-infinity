@@ -18,11 +18,11 @@ export function updateData(Displays, game, Constructs, Buttons){ //(Displays, ga
     condenseDisplayFormat(Displays.DisplayScorePoint, game.pointScore, 5);
     condenseDisplayFormat(Displays.DisplayScoreLimit, game.limits.Score, 5);
     
-    if(hover==false){
+    if(game.hover==false){
     condenseAppend(Displays.DisplayProductionPoint,
         condenseDisplayFormatOut( 
         Constructs.structuresGen(game.structures), 5), " Points/s")
-    }else if(hover==true){
+    }else if(game.hover==true){
     condenseAppend(Displays.DisplayProductionPoint, 
         condenseDisplayFormatOut(
         (Constructs.structuresGen(game.structures)/game.limits.Score), 5)

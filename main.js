@@ -7,7 +7,7 @@ import { updateData } from "./functions.js";
 let Displays = {};
 let Buttons = {};
 
-let hover = false;
+
 
 $(document).ready(function () {
   console.log("Debug message");
@@ -147,6 +147,7 @@ function init() {
       if (game.limits.Score >= Cost) {
         game.limits.Score -= Cost;
         game.structures[i] += 1;
+        game.totalStructures[i] += 1;
       }
     });
   }

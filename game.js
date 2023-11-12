@@ -6,6 +6,8 @@ export class Game {
     this.frameCount = 0;
     this.frameSaveCount = 0;
 
+    this.hover = false;
+
     this.pointScore = 0;
     this.limitScoreTotal = 0;
     this.extendScoreTotal = 0;
@@ -16,6 +18,7 @@ export class Game {
       Gain: 1,
     };
 
+    this.totalStructures = [0,0,0,0,0,0];
     this.structures = [0, 0, 0, 0, 0, 0];
 
     this.upgradesSL1 = [0, 0, 0, 0, 0]; //Structures in Limits
@@ -59,6 +62,9 @@ export class Game {
       if (savedGame.limits.scoreThis == null) {
         //fix "Limits this Extend"
         savedGame.limits.scoreThis = savedGame.limitScoreTotal;
+      }
+      if(savedGame.totalStructures == null){
+        savedGame.totalStructures = savedGame.structures;
       }
     }
     Object.assign(this, savedGame);
